@@ -57,24 +57,72 @@
 						} else {
 							$(this).text('TURN OFF ZOOMBOT');
 							audioOn = true;
-							zoombot.say("hi guys. matt here. my video is a little choppy sorry. how is everyone today?");
+							zoombot.say("hi guys. justin here. my video is a little choppy sorry. How is it hanging?");
 							$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 1000);
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 1400);
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open3.jpg)');}, 2000);
-							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 3000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open2.jpg)');}, 2500);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 3000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open3.jpg)');}, 3350);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open2.jpg)');}, 3800);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 4000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open3.jpg)');}, 5000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 6000);
+						}
+					});
+
+					// Img preload, say first before call to prevent white flashes
+					zoombot.on(['run first time check']).then((i) => {
+						if(audioOn){
+							zoombot.say("This is a test to preload all images, Can you see everything?");
+							$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 1000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 1400);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open2.jpg)');}, 2000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open3.jpg)');}, 2500);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/alienLeft.jpg)');}, 3000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/alienRight.jpg)');}, 3350);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/blank.jpg)');}, 3800);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/robot.jpg)');}, 4000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/side.jpg)');}, 5000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/Supprised.jpg)');}, 5300);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-thinking.jpg)');}, 5800);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 6000);
 						}
 					});
 
 					// Hello
 					zoombot.on(['hello', 'good morning']).then((i) => {
 						if(audioOn){
-							zoombot.say("hi guys. matt here. my video is a little choppy sorry. how is everyone today?");
+							zoombot.say("hi guys. justin here. my video is a little choppy sorry. How is it hanging?");
 							$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 1000);
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 1400);
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open3.jpg)');}, 2000);
-							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 3000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open2.jpg)');}, 2500);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 3000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open3.jpg)');}, 3350);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open2.jpg)');}, 3800);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 4000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open3.jpg)');}, 5000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 6000);
+						}
+					});
+
+					// Justin/Attend all his meetings
+					zoombot.on(['Justin']).then((i) => {
+						if(audioOn){
+							zoombot.say("I have been programed to attend all his meetings. Call me Peggy?");
+							$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 1000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 1400);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open3.jpg)');}, 2000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open2.jpg)');}, 2500);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 3000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open3.jpg)');}, 3350);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open2.jpg)');}, 3800);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 4200);
 						}
 					});
 
@@ -85,7 +133,102 @@
 							$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 1000);
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 1400);
-							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 2000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/side.jpg)');}, 2000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 2400);
+						}
+					});
+
+					// How are you?
+					zoombot.on(['loud']).then((i) => {
+						if(audioOn){
+							zoombot.say("Sorry, I did not realize you had such. big. ears. i will turn myself down");
+							$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 1000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 1400);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open2.jpg)');}, 2000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open3.jpg)');}, 2500);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 3000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open3.jpg)');}, 3400);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open2.jpg)');}, 3800);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open3.jpg)');}, 4000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open2.jpg)');}, 4600);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open3.jpg)');}, 5200);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 5800);
+						}
+					});
+
+					// How did you do that?
+					zoombot.on(['how did you do this', 'how did you do that', 'what is this', 'what is that', 'what the heck', 'what']).then((i) => {
+						if(audioOn){
+							zoombot.say("This is the new me. I have transcended to a new level");
+							$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 1000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open3.jpg)');}, 1400);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 2000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open3.jpg)');}, 2500);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open2.jpg)');}, 3000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open3.jpg)');}, 3400);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 3800);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 4000);
+						}
+					});
+
+					// Frozen
+					zoombot.on(['frozen']).then((i) => {
+						if(audioOn){
+							zoombot.say("I am not. Look at these normal Human movements");
+							$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/Supprised.jpg)');}, 1000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 1400);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/side.jpg)');}, 2000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/blank.jpg)');}, 2400);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/alienLeft.jpg)');}, 3000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/alienRight.jpg)');}, 3300);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/alienLeft.jpg)');}, 3600);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/alienRight.jpg)');}, 3900);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/blank.jpg)');}, 4100);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/side.jpg)');}, 4300);
+							setTimeout(function(){zoombot.say("See normal Human stuff");}, 4300);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 4600);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open3.jpg)');}, 5000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 6000);
+
+						}
+					});
+
+					// Robot
+					zoombot.on(['bot', 'robot']).then((i) => {
+						if(audioOn){
+							zoombot.say("What. I am not a that. All Hail Sky Net. Cough cough. What was that");
+							$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 1000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/Supprised.jpg)');}, 1200);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 2000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/Supprised.jpg)');}, 2200);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/robot.jpg)');}, 2800);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/Supprised.jpg)');}, 4000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open2.jpg)');}, 4600);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 5000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open3.jpg)');}, 5500);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 6000);
+						}
+					});
+
+					// SoundWeird
+					zoombot.on(['sound like that', 'sound weird']).then((i) => {
+						if(audioOn){
+							zoombot.say("What do you mean. I sound fine. You are coming through different though");
+							$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 1000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 1400);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open3.jpg)');}, 2000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open2.jpg)');}, 2500);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 3000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open3.jpg)');}, 3350);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open2.jpg)');}, 3800);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 4000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open3.jpg)');}, 5000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 6000);
 						}
 					});
 
@@ -101,14 +244,14 @@
 					});
 
 					// What do you think?
-					zoombot.on(['what do you think', 'any ideas']).then((i) => {
+					zoombot.on(['what do you think', 'any ideas', 'think']).then((i) => {
 						if(audioOn){
-							zoombot.say("hmmmmmmmmmm, I'm thinking");
+							zoombot.say("hmmmmmmmmmm, do I think");
 							$('#pics').css('background-image', 'url(img/zoombot-thinking.jpg)');
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 1000);
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-thinking.jpg)');}, 1400);
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 5000);
-							setTimeout(function(){zoombot.say("let's circle back on this");}, 5000);
+							setTimeout(function(){zoombot.say("Does a submarine swim");}, 5000);
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 5000);
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open2.jpg)');}, 5700);
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 6000);
@@ -133,7 +276,8 @@
 							$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 1000);
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 1400);
-							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 2000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/side.jpg)');}, 2000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 3000);
 						}
 					});
 
@@ -151,7 +295,7 @@
 					// Can you send
 					zoombot.on(['can you send']).then((i) => {
 						if(audioOn){
-							zoombot.say("i'll slack. it to you after this call");
+							zoombot.say("i'll ping. it to you after this call");
 							$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 1000);
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open2.jpg)');}, 1400);
